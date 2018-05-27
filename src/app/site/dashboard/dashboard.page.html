@@ -1,0 +1,3 @@
+<ng-container *ngIf="controller.fullState$ | async as state">
+    <nmb-presentation *ngIf="state.layoutType === 'ok'" [state]="state.ok"></nmb-presentation>
+</ng-container>

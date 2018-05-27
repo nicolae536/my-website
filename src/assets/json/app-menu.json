@@ -1,0 +1,17 @@
+[
+    {
+        "path": "",
+        "title": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "path": "/experience",
+        "title": "Experience",
+        "icon": "timeline"
+    },
+    {
+        "path": "/contact",
+        "title": "Contact",
+        "icon": "phone"
+    }
+]

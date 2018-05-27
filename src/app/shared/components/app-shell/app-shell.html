@@ -1,0 +1,30 @@
+<mat-sidenav-container>
+    <mat-sidenav #drawer
+                 mode="over">
+        <nmb-navigation [urls]="menuItems$ | async"></nmb-navigation>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="nmb-application-container">
+            <mat-toolbar color="primary">
+                <button class="mobile-navigation"
+                        mat-icon-button
+                        (click)="drawer && drawer.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <nmb-navigation [urls]="menuItems$ | async"
+                                class="desktop-navigation"></nmb-navigation>
+            </mat-toolbar>
+            <div #content
+                 class="nmb-application-routes">
+                <div class="loader-container">
+                    <mat-progress-bar *ngIf="appState.isLoading$ | async"
+                                      mode="indeterminate"
+                                      color="accent"></mat-progress-bar>
+                </div>
+                <div class="nmb-page-content">
+                    <ng-content></ng-content>
+                </div>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,8 @@
+<ng-container *ngIf="urls">
+    <div *ngFor="let url of urls" class="url">
+        <button mat-button [routerLink]="url.path">
+            <mat-icon *ngIf="url.icon">{{url.icon}}</mat-icon>
+            <span class="url-title">{{url.title}}</span>
+        </button>
+    </div>
+</ng-container>

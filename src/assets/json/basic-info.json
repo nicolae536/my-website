@@ -1,0 +1,86 @@
+{
+    "info": {
+        "name": "Nicolae Bacila",
+        "picture": "/assets/images/me.png",
+        "age": "24",
+        "phone": "0774024805"
+    },
+    "programming": {
+        "description": "I'm a full stack developer on javascript. In the past years I worked with javascript to create interactive web applications in some cases powered up by node servers",
+        "advanced": [
+            {
+                "title": "Javascript",
+                "iconUrl": "/assets/images/js.png",
+                "description": ""
+            },
+            {
+                "title": "HTML",
+                "iconUrl": "/assets/images/html.png",
+                "description": ""
+            },
+            {
+                "title": "CSS",
+                "iconUrl": "/assets/images/css.png",
+                "description": ""
+            },
+            {
+                "title": "Webpack",
+                "iconUrl": "/assets/images/webpack.png",
+                "description": ""
+            },
+            {
+                "title": "Angular",
+                "iconUrl": "/assets/images/angular.png",
+                "description": ""
+            },
+            {
+                "title": "Node",
+                "iconUrl": "/assets/images/node.png",
+                "description": ""
+            },
+            {
+                "title": "SCSS",
+                "iconUrl": "/assets/images/scss.png",
+                "description": ""
+            },
+            {
+                "title": "Angular material",
+                "iconUrl": "/assets/images/angular-material.png",
+                "description": ""
+            },
+            {
+                "title": "Webstorm",
+                "iconUrl": "/assets/images/webstorm.png",
+                "description": "My favorite ide"
+            }
+        ]
+    },
+    "skills": {
+        "education": [
+            {
+                "school": "Colegiul National Inochentie Micu Clain",
+                "street": "Str. Simion Bărnuţiu, nr. 2 - BLAJ, 515400,  jud. Alba",
+                "phone": "+(40)0258-711208",
+                "pictureUrl": "http://www.imclain.ro/images/image003.jpg",
+                "link": "http://www.imclain.ro/index.php"
+            },
+            {
+                "school": "University Babeş-Bolyai",
+                "street": "Str. Mihail Kogălniceanu, nr. 1 400084, Cluj-Napoca, România",
+                "phone": "+40 264 405 300",
+                "pictureUrl": "http://www.ubbcluj.ro/img/logo_UBB_ro.png",
+                "link": "http://www.ubbcluj.ro/ro/"
+            }
+        ],
+        "languages": [
+            {
+                "name": "Romanian",
+                "isNative": true
+            },
+            {
+                "name": "English",
+                "isNative": false
+            }
+        ]
+    }
+}
