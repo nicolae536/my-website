@@ -1,13 +1,14 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {RouterModule} from '@angular/router';
-import {ServiceWorkerModule} from '@angular/service-worker';
-import {environment} from '../environments/environment';
+import { NgModule } from '@angular/core';
+import { MatButtonModule, MatIconModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
-import {AppComponent} from './app.component';
-import {SharedModule} from './shared/shared-module';
-import {APP_ROUTES, APP_ROUTES_COMPONENTS} from './site/routes';
+import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared-module';
+import { APP_ROUTES, APP_ROUTES_COMPONENTS } from './site/routes';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,10 @@ import {APP_ROUTES, APP_ROUTES_COMPONENTS} from './site/routes';
   imports: [
     BrowserModule,
     SharedModule,
+
+    MatIconModule,
+    MatButtonModule,
+
     RouterModule.forRoot(APP_ROUTES),
     ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     BrowserAnimationsModule

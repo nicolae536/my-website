@@ -6,70 +6,72 @@
         "phone": "0774024805"
     },
     "programming": {
+        "title": "Programming",
         "description": "I'm a full stack developer on javascript. In the past years I worked with javascript to create interactive web applications in some cases powered up by node servers",
         "advanced": [
             {
                 "title": "Javascript",
                 "iconUrl": "/assets/images/js.png",
-                "description": ""
+                "description": "Javascript is the base and we cannot write great platforms without knowing the base of the web platform"
             },
             {
                 "title": "HTML",
                 "iconUrl": "/assets/images/html.png",
-                "description": ""
+                "description": "Base html structure which probably will become the main ui describer"
             },
             {
                 "title": "CSS",
                 "iconUrl": "/assets/images/css.png",
-                "description": ""
+                "description": "The only way to style your elements and make your webpage interactinve"
             },
             {
                 "title": "Webpack",
-                "iconUrl": "/assets/images/webpack.png",
-                "description": ""
+                "iconUrl": "/assets/images/webpack.svg",
+                "description": "Webpack a great web assets bundler which enhances the build pipelines."
             },
             {
                 "title": "Angular",
                 "iconUrl": "/assets/images/angular.png",
-                "description": ""
+                "description": "Angular is my favorite ui framework. I like the structure which he brings to the table"
             },
             {
                 "title": "Node",
-                "iconUrl": "/assets/images/node.png",
-                "description": ""
+                "iconUrl": "/assets/images/node.svg",
+                "description": "Node js is a great platform for writing fast servers"
             },
             {
                 "title": "SCSS",
-                "iconUrl": "/assets/images/scss.png",
-                "description": ""
+                "iconUrl": "/assets/images/sass.png",
+                "description": "Sass extends css syntax and is very helpful on large applications"
             },
             {
-                "title": "Angular material",
+                "title": "Material design",
                 "iconUrl": "/assets/images/angular-material.png",
-                "description": ""
+                "description": "I worked a lot with material design mainly in angular."
             },
             {
                 "title": "Webstorm",
-                "iconUrl": "/assets/images/webstorm.png",
-                "description": "My favorite ide"
+                "iconUrl": "/assets/images/webstorm.jpeg",
+                "description": "My favorite ide because I come from a .net background and VS+Resharper offer a lot of flexibility."
             }
         ]
     },
     "skills": {
+        "title": "Other skills",
         "education": [
-            {
-                "school": "Colegiul National Inochentie Micu Clain",
-                "street": "Str. Simion Bărnuţiu, nr. 2 - BLAJ, 515400,  jud. Alba",
-                "phone": "+(40)0258-711208",
-                "pictureUrl": "http://www.imclain.ro/images/image003.jpg",
-                "link": "http://www.imclain.ro/index.php"
-            },
             {
                 "school": "University Babeş-Bolyai",
                 "street": "Str. Mihail Kogălniceanu, nr. 1 400084, Cluj-Napoca, România",
                 "phone": "+40 264 405 300",
-                "pictureUrl": "http://www.ubbcluj.ro/img/logo_UBB_ro.png",
+                "pictureUrl": "assets/images/logo_UBB_ro.png",
                 "link": "http://www.ubbcluj.ro/ro/"
+            },
+            {
+                "school": "Colegiul National Inochentie Micu Clain",
+                "street": "Str. Simion Bărnuţiu, nr. 2 - BLAJ, 515400,  jud. Alba",
+                "phone": "+(40)0258-711208",
+                "pictureUrl": "assets/images/imclain.png",
+                "link": "http://www.imclain.ro/index.php"
             }
         ],
         "languages": [

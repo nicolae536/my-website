@@ -1,0 +1,14 @@
+<ng-container *ngIf="state && state.programming">
+  <div class="short-description">
+    {{state.programming.description}}
+  </div>
+  <div class="experience-tiles">
+    <ng-container *ngFor="let it of state.programming.advanced">
+      <nmb-tile-card class="experience-tile"
+                     [title]="it.title"
+                     [picture]="it.iconUrl"
+                     [description]="it.description">
+      </nmb-tile-card>
+    </ng-container>
+  </div>
+</ng-container>

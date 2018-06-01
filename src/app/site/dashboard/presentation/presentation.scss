@@ -1,5 +1,24 @@
+@import "../../../shared/scss/variables";
+@import "../../../shared/scss/mixin";
+
 .presentation {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    .presentation-image {
+        padding: 20px;
+    }
+
+    .presentation-details {
+        padding: 20px;
+    }
+
+    @include phone {
+        .presentation {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
 }
+

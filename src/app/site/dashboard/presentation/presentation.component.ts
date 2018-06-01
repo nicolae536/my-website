@@ -1,5 +1,5 @@
-import {Component, OnInit, ChangeDetectionStrategy, Input, ViewEncapsulation} from '@angular/core';
-import {IBasicInfo} from '../../../shared/core';
+import { Component, ChangeDetectionStrategy, Input, ViewEncapsulation } from '@angular/core';
+import { IBasicInfo } from '../../../shared/core';
 
 @Component({
   selector: 'nmb-presentation',
@@ -8,12 +8,6 @@ import {IBasicInfo} from '../../../shared/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class NmbPresentationComponent implements OnInit {
+export class NmbPresentationComponent {
   @Input() state: IBasicInfo;
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
 }

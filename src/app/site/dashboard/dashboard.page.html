@@ -1,3 +1,7 @@
 <ng-container *ngIf="controller.fullState$ | async as state">
-    <nmb-presentation *ngIf="state.layoutType === 'ok'" [state]="state.ok"></nmb-presentation>
+  <ng-container *ngIf="state.layoutType === 'ok'">
+    <nmb-presentation [state]="state.ok"></nmb-presentation>
+    <nmb-programming-experience [state]="state.ok"></nmb-programming-experience>
+    <nmb-skills [state]="state.ok"></nmb-skills>
+  </ng-container>
 </ng-container>

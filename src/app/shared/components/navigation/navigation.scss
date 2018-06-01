@@ -1,4 +1,5 @@
 @import "../../scss/variables";
+@import "../../scss/mixin";
 
 nmb-navigation {
     display: flex;
@@ -12,10 +13,8 @@ nmb-navigation {
             margin-left: 10px;
         }
     }
-}
 
-@media only screen and (max-width: $mobile) {
-    nmb-navigation {
+    @include phone {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -32,3 +31,4 @@ nmb-navigation {
         }
     }
 }
+

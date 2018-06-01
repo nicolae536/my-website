@@ -1,4 +1,5 @@
 @import "../../scss/variables";
+@import "../../scss/mixin";
 
 nmb-app-shell {
 
@@ -38,10 +39,8 @@ nmb-app-shell {
         overflow: hidden;
         position: absolute;
     }
-}
 
-@media only screen and (max-width: $mobile) {
-    nmb-app-shell {
+    @include phone {
         .mobile-navigation {
             display: block;
         }

@@ -1,0 +1,46 @@
+@import "../../../shared/scss/variables";
+@import "../../../shared/scss/mixin";
+
+nmb-skills {
+    .skill-card-content {
+        display: block;
+    }
+
+    nmb-card {
+        //margin: 15px;
+    }
+
+    .education-item {
+        margin: 15px 0 15px 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .education-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .education-details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .education-actions {
+        align-self: flex-end;
+    }
+
+    .school-details {
+        .school-detail-item {
+            padding: 15px 0 15px 0;
+        }
+    }
+
+    @include phone {
+        .education-item {
+            flex-direction: column;
+        }
+    }
+}
+
