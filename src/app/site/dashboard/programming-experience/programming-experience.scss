@@ -29,6 +29,10 @@ nmb-programming-experience {
         .experience-tile {
             flex: 1 0 auto;
             margin: 15px 0 15px 0;
+
+            &> .mat-card {
+                width: 100%;
+            }
         }
     }
 }
