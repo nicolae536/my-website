@@ -10,6 +10,7 @@ import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@a
 export class NmbTileCardComponent {
   @Input() icon: string;
   @Input() title: string;
+  @Input() subtitle: string;
   @Input() description: string;
   @Input() picture: string;
 }

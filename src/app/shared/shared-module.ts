@@ -7,37 +7,39 @@ import { NmbAppShellComponent } from './components/app-shell/app-shell.component
 import { CardContentComponent } from './components/card-content/card-content.component';
 import { CardComponent } from './components/card/card.component';
 import { NmbNavigationComponent } from './components/navigation/navigation.component';
+import { NmbPresentationSectionComponent } from './components/presentation-section/presentation-section.component';
 import { NmbTileCardComponent } from './components/tile-card/tile-card';
 import { NmbApiService, NmbLoadingWatcherService } from './core';
 
 const DECLARATIONS = [
-  CardComponent,
-  CardContentComponent,
-  NmbAppShellComponent,
-  NmbNavigationComponent,
-  NmbTileCardComponent
+    CardComponent,
+    CardContentComponent,
+    NmbAppShellComponent,
+    NmbNavigationComponent,
+    NmbTileCardComponent,
+    NmbPresentationSectionComponent
 ];
 
 const PROVIDERS = [
-  NmbApiService,
-  NmbLoadingWatcherService
+    NmbApiService,
+    NmbLoadingWatcherService
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatButtonModule,
-    MatIconModule,
-    MatProgressBarModule,
-    RouterModule
-  ],
-  declarations: [...DECLARATIONS],
-  exports: [...DECLARATIONS],
-  providers: [...PROVIDERS]
+    imports: [
+        CommonModule,
+        HttpClientModule,
+        MatCardModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatButtonModule,
+        MatIconModule,
+        MatProgressBarModule,
+        RouterModule
+    ],
+    declarations: [...DECLARATIONS],
+    exports: [...DECLARATIONS],
+    providers: [...PROVIDERS]
 })
 export class SharedModule {
 }

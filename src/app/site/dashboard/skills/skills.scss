@@ -10,10 +10,6 @@ nmb-skills {
         display: block;
     }
 
-    nmb-card {
-        //margin: 15px;
-    }
-
     .education-item {
         margin: 15px 0 15px 0;
         display: flex;
@@ -32,7 +28,8 @@ nmb-skills {
     }
 
     .education-actions {
-        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .school-details {

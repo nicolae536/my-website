@@ -8,8 +8,10 @@ nmb-app-shell {
         display: flex;
         overflow: hidden;
         flex-direction: column;
-        min-height: 100vh;
-        min-width: 100vw;
+        min-height: $app-min-height;
+        min-width: $app-min-width;
+        width: 100vw;
+        height: 100vh;
         max-height: 100vh;
         max-width: 100vw;
 
@@ -24,10 +26,12 @@ nmb-app-shell {
         max-height: 100%;
         max-width: 100%;
         position: relative;
+        width: 100%;
     }
 
     .nmb-page-content {
         padding: 15px 0 15px 0;
+        overflow: hidden;
     }
 
     .mobile-navigation {

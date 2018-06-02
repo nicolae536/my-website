@@ -8,8 +8,9 @@ export interface IBasicInfo {
         phone: string
     };
     skills: {
-        title: string,
+        description: string,
         education: {
+            domain: string,
             school: string,
             street: string,
             phone: string,

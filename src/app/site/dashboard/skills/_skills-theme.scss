@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+
+@mixin nmb-skills($material-palette) {
+    $primary: map-get($material-palette, primary);
+
+    nmb-skills {
+        background: mat-color($primary, 100);
+    }
+}

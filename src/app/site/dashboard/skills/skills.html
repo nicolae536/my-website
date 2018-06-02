@@ -1,37 +1,63 @@
-<nmb-card [title]="state.skills.title"
-          [subtitle]="state.skills.title">
-  <nmb-mat-card-content class="skill-card-content">
-    <div class="education-item" *ngFor="let it of state.skills.education">
-      <div class="education-image">
-        <img class="fit-image-fix-size" [src]="it.pictureUrl"/>
-      </div>
-      <div class="education-details">
-        <div class="school-details">
-          <div class="school-detail-item">
-            Name: {{it.school}}
-          </div>
-          <div class="school-detail-item">
-            Address: {{it.street}}
-          </div>
-          <div class="school-detail-item">
-            Contact: {{it.phone}}
-          </div>
-        </div>
-        <div class="education-actions">
-          <button mat-icon-button (click)="location.href = it.url">
-            <mat-icon>url</mat-icon>
-          </button>
-        </div>
-      </div>
-    </div>
-  </nmb-mat-card-content>
-</nmb-card>
+<nmb-presentation-section title="Education"
+                          [description]="state.skills.description">
+    <nmb-presentation-content>
+        <nmb-tile-card *ngFor="let it of state.skills.education"
+                       class="flex-row-tiles"
+                       [subtitle]="it.school"
+                       [picture]="it.pictureUrl">
+            <nmb-card-content class="skill-card-content">
+                <div class="school-detail-item">
+                    Address: {{it.street}}
+                </div>
+                <div class="school-detail-item">
+                    Contact: {{it.phone}}
+                </div>
+            </nmb-card-content>
+            <nmb-card-actions class="education-actions">
+                <button mat-icon-button
+                        color="primary"
+                        (click)="location.href = it.url">
+                    <mat-icon>link</mat-icon>
+                </button>
+            </nmb-card-actions>
+        </nmb-tile-card>
+    </nmb-presentation-content>
+</nmb-presentation-section>
+
+<!--<nmb-card [title]="state.skills.description"-->
+<!--[subtitle]="state.skills.description">-->
+<!--<nmb-mat-card-content class="skill-card-content">-->
+<!--<div class="education-item" *ngFor="let it of state.skills.education">-->
+<!--<div class="education-image">-->
+<!--<img class="fit-image-fix-size" [src]="it.pictureUrl"/>-->
+<!--</div>-->
+<!--<div class="education-details">-->
+<!--<div class="school-details">-->
+<!--<div class="school-detail-item">-->
+<!--Name: {{it.school}}-->
+<!--</div>-->
+<!--<div class="school-detail-item">-->
+<!--Address: {{it.street}}-->
+<!--</div>-->
+<!--<div class="school-detail-item">-->
+<!--Contact: {{it.phone}}-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="education-actions">-->
+<!--<button mat-icon-button (click)="location.href = it.url">-->
+<!--<mat-icon>url</mat-icon>-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</nmb-mat-card-content>-->
+<!--</nmb-card>-->
 
 <nmb-card title="Language skills">
-  <nmb-mat-card-content class="language-container">
-    <div class="language-item" *ngFor="let it of state.skills.languages">
-      {{it.name}}
-      <mat-icon *ngIf="it.isNative">like</mat-icon>
-    </div>
-  </nmb-mat-card-content>
+    <nmb-mat-card-content class="language-container">
+        <div class="language-item" *ngFor="let it of state.skills.languages">
+            {{it.name}}
+            <mat-icon *ngIf="it.isNative">like</mat-icon>
+        </div>
+    </nmb-mat-card-content>
 </nmb-card>

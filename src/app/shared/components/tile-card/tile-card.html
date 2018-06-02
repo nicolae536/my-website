@@ -1,20 +1,28 @@
 <mat-card>
-  <mat-card-content>
-    <div class="tile-content">
-      <div class="tile-image">
-        <img [src]="picture">
-      </div>
-      <div class="tile-header">
-        <div class="title">
-          {{title}}
+    <mat-card-content>
+        <div class="tile-content">
+            <div class="tile-image">
+                <img [src]="picture">
+            </div>
+            <div class="tile-inner-content">
+                <div class="tile-header">
+                    <div class="tile-title">
+                        {{title}}
+                    </div>
+                    <div class="tile-subtitle">
+                        {{subtitle}}
+                    </div>
+                    <div class="tile-description">
+                        {{description}}
+                    </div>
+                </div>
+                <div class="tile-outer-content">
+                    <ng-content select="nmb-card-content"></ng-content>
+                </div>
+            </div>
         </div>
-        <div class="description">
-          {{description}}
-        </div>
-      </div>
-    </div>
-  </mat-card-content>
-  <mat-card-actions>
-    <ng-content select="nmb-card-actions"></ng-content>
-  </mat-card-actions>
+    </mat-card-content>
+    <mat-card-actions>
+        <ng-content select="nmb-card-actions"></ng-content>
+    </mat-card-actions>
 </mat-card>

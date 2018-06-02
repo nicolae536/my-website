@@ -16,3 +16,23 @@
     height: 100%;
     width: auto;
 }
+
+nmb-app-shell {
+    .flex-row-tiles {
+        margin: 15px;
+        flex: 1 0 30%;
+        flex-wrap: wrap;
+    }
+
+    @include phone {
+
+        .flex-row-tiles {
+            flex: 1 0 auto;
+            margin: 15px 0 15px 0;
+
+            & > .mat-card {
+                width: 100%;
+            }
+        }
+    }
+}

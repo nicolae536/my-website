@@ -57,9 +57,10 @@
         ]
     },
     "skills": {
-        "title": "Other skills",
+        "description": "I studied at the following institutes",
         "education": [
             {
+                "domain": "Computer science",
                 "school": "University Babeş-Bolyai",
                 "street": "Str. Mihail Kogălniceanu, nr. 1 400084, Cluj-Napoca, România",
                 "phone": "+40 264 405 300",
@@ -67,6 +68,7 @@
                 "link": "http://www.ubbcluj.ro/ro/"
             },
             {
+                "domain": "Computer science",
                 "school": "Colegiul National Inochentie Micu Clain",
                 "street": "Str. Simion Bărnuţiu, nr. 2 - BLAJ, 515400,  jud. Alba",
                 "phone": "+(40)0258-711208",

@@ -1,0 +1,49 @@
+@import "../../scss/mixin";
+
+nmb-presentation-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+
+    .title {
+        font-size: 2.3rem;
+        padding: 15px;
+    }
+
+    .presentation-top-section {
+        padding: 20px;
+
+        p {
+            text-indent: 25px;
+            letter-spacing: 2px;
+            text-align: justify;
+        }
+    }
+
+    nmb-presentation-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include phone {
+        padding: 15px;
+
+        .title {
+            font-size: 1.5rem;
+        }
+
+        nmb-presentation-content {
+            flex-direction: column;
+        }
+
+        .experience-tile {
+            flex: 1 0 auto;
+            margin: 15px 0 15px 0;
+
+            & > .mat-card {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,19 +1,11 @@
-<ng-container *ngIf="state && state.programming">
-    <div class="description-container">
-        <div class="title">
-            Programming experience
-        </div>
-        <p>
-            {{state.programming.description}}
-        </p>
-    </div>
-    <div class="experience-tiles">
-        <ng-container *ngFor="let it of state.programming.advanced">
-            <nmb-tile-card class="experience-tile"
-                           [title]="it.title"
-                           [picture]="it.iconUrl"
-                           [description]="it.description">
-            </nmb-tile-card>
-        </ng-container>
-    </div>
-</ng-container>
+<nmb-presentation-section title="Programming experience"
+                          [description]="state.programming.description">
+    <nmb-presentation-content>
+        <nmb-tile-card *ngFor="let it of state.programming.advanced"
+                       class="flex-row-tiles"
+                       [title]="it.title"
+                       [picture]="it.iconUrl"
+                       [description]="it.description">
+        </nmb-tile-card>
+    </nmb-presentation-content>
+</nmb-presentation-section>
