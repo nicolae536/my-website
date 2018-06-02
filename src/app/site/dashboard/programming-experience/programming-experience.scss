@@ -4,9 +4,21 @@
 nmb-programming-experience {
     display: flex;
     flex-direction: column;
+    padding: 20px 0 20px 0;
 
-    .short-description {
+    .title {
+        font-size: 2.3rem;
+        padding: 15px;
+    }
+
+    .description-container {
         padding: 20px;
+
+        p {
+            text-indent: 25px;
+            letter-spacing: 2px;
+            text-align: justify;
+        }
     }
 
     .experience-tiles {
@@ -22,6 +34,12 @@ nmb-programming-experience {
     }
 
     @include phone {
+        padding: 15px;
+
+        .title {
+            font-size: 1.5rem;
+        }
+
         .experience-tiles {
             flex-direction: column;
         }
@@ -30,7 +48,7 @@ nmb-programming-experience {
             flex: 1 0 auto;
             margin: 15px 0 15px 0;
 
-            &> .mat-card {
+            & > .mat-card {
                 width: 100%;
             }
         }

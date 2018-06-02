@@ -1,4 +1,6 @@
+@import "theme";
 @import "variables";
+@import "mixin";
 
 .fit-image-fix-size {
     max-width: 100%;
@@ -9,6 +11,7 @@
     width: 100%;
     height: auto;
 }
+
 .fit-image-height-priority {
     height: 100%;
     width: auto;

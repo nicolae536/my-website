@@ -2,6 +2,10 @@
 @import "../../../shared/scss/mixin";
 
 nmb-skills {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
     .skill-card-content {
         display: block;
     }

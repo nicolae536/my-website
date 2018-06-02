@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+
+@mixin nmb-programming-experience($material-palette, $app-palette) {
+    // Extract whichever individual palettes you need from the theme.
+    $primary: map-get($material-palette, primary);
+    $accent: map-get($material-palette, accent);
+    $foreground: map-get($material-palette, foreground);
+    $background: map-get($material-palette, background);
+
+
+    // Use mat-color to extract individual colors from a palette as necessary.
+    nmb-programming-experience {
+        background: mat-color($primary, 50);
+
+        .experience-tiles {
+        }
+    }
+}
