@@ -1,6 +1,11 @@
 nmb-tile-card {
     display: flex;
 
+
+    &> .mat-card {
+        width: 100%;
+    }
+
     .tile-inner-content {
         display: flex;
         flex-direction: column;
